@@ -16,10 +16,10 @@ function App() {
         <Button onClick={()=>window.location.reload()}>Reload</Button> {/*hard refresh */}
         <Button onClick={App}>App Realod</Button> {/*state reload refresh*/}
       </Jumbotron>
-   
-      {/* <News></News> */}
       <Chart></Chart>
       <Chart2></Chart2>
+      <News></News>
+    
     </div>
   );
 }
