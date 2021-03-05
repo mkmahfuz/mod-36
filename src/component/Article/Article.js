@@ -4,8 +4,8 @@ import { Card } from 'react-bootstrap';
 const Article = (props) => {
     const {title,description,content} = props.article;
     return (
-        <div>
-            <Card style={{width:'18rem'}}>
+        <>
+            <Card style={{width:'38rem'}}>
                 <Card.Body>
                     <Card.Header>{title}</Card.Header>
                 <Card.Title>{description}</Card.Title>
@@ -14,7 +14,7 @@ const Article = (props) => {
                 </Card.Body>
             </Card>
             
-        </div>
+        </>
     );
 };
 

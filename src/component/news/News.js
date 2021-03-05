@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CardDeck } from 'react-bootstrap';
+import { CardColumns, CardDeck } from 'react-bootstrap';
 import Article from '../Article/Article';
 
 const News = () => {
@@ -14,12 +14,12 @@ const News = () => {
     //const articles = news.articles;
 
     return (
-        <CardDeck>
+        <CardColumns>
             {
                 // console.log(articles.length)
                 articles.map((article,indx)=><Article key={indx} article={article}></Article>)
             }
-       </CardDeck>
+       </CardColumns>
     );
 };
 
